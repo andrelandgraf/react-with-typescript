@@ -2,13 +2,13 @@
 
 A skeleton application using typescript and create-react-app. 
 
-## How to add TypeScript to an existing create-react-app application
+## How to add TypeScript to an existing create-react-app application?
 
 1. Bootstrapp app with [Create React App](https://github.com/facebook/create-react-app).
 
 `npx create-react-app my-app`
 
-2. [Add TypeScript] (https://facebook.github.io/create-react-app/docs/adding-typescript)
+2. [Add TypeScript](https://facebook.github.io/create-react-app/docs/adding-typescript)
 
 `npm install --save typescript @types/node @types/react @types/react-dom @types/jest`
 
@@ -22,9 +22,9 @@ A skeleton application using typescript and create-react-app.
 
 ### Typing with TypeScript
 
-- as a typed superset of JavaScript, TypeScript verifies types on compilation
-- in React world, [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html) validate types in run-time, this is hower not needed anymore if TypeScript is used. As a conclusion, if you maintain a React app that soley is based on TypeScript, PropTypes are not needed anymore.
-- when using TypeScript, the best way to subsitute PropTypes is to create an Interface for every component's props and state. 
+- As a typed superset of JavaScript, TypeScript verifies types on compilation
+- In React world, [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html) validate types in run-time, this is however not needed anymore if TypeScript is used. As a conclusion, if you maintain a React app that soley is based on TypeScript, PropTypes are not needed anymore.
+- When using TypeScript, the best way to substitute PropTypes is to create an Interface for every component's props and state. 
 
 [See following example](https://charleslbryant.gitbooks.io/hello-react-and-typescript/content/TypeScriptAndReact.html):
 
@@ -87,9 +87,9 @@ Only limitation:
 
 TypeScript brings following advantags to the table: 
 
-TypeScript Feature  | Expalanation | Use Cases in React World?
+TypeScript Feature  | Explanation | Use Cases in React World?
 ------------- | ------------- | -------------
-Safe typing   | Verify static typing on compile time | Improves React World and minimizes the likelihood of some errors => improves the code quality of the React App
+Safe typing   | Verify static typing on compile time | Improves the code quality of the React App
 Inheritance & inheritance behavior on runtime  | Class inheritance & usage of interfaces | React has its own system based on nesting components (render tree) which allows very limited usage of inheritance in React world, e.g. only usage might be Utility functionalies or Services.
 [mixins](https://basarat.gitbooks.io/typescript/docs/types/mixins.html) | Allow the extension of classes and functions further to inheritance | React/Redux uses the Redux middleware functionality to implement side effects like this
 [dependency injection](https://nehalist.io/dependency-injection-in-typescript/) (e.g. via [inversify](http://inversify.io/)) | Inversion of control (IoC) has a lot of powerful use cases when it comes to backend programming e.g. switch database based on env, switch services and mockup services for testing, etc., | Again, React works in a different way and rather works around the render tree and the usage of Redux flags and props to switch out components.
@@ -100,7 +100,7 @@ See [TypeScript JSX documentation](https://www.typescriptlang.org/docs/handbook/
 
 ## Conclusion
 
-TypeScript is a powerful tool that enables type safety in JavaScript world. Moreover, it enables a lot of principles of OO programming that are not part of the JavaScript language design. I have mentioned the most important features of TypeScript above. React however is based on it's own design principles and "it helps you write a program that predictably manipulates a complex host tree in response to external events like interactions, network responses, timers, and so on." - [Dan Abramov](https://overreacted.io/react-as-a-ui-runtime/). You can use TypeScript in your React Application but you will not get the same amount of advanatages out of it as you would if used in a NodeJS backend application. React has it's own design priciples and therefore not a lot of use cases for inheritance, mixins, and dependency injection.
+TypeScript is a powerful tool that enables type safety in JavaScript world. Moreover, it enables a lot of principles of OO programming that are not part of the JavaScript language design. I have mentioned the most important features of TypeScript above. React however is based on its own design principles and "it helps you write a program that predictably manipulates a complex host tree in response to external events like interactions, network responses, timers, and so on." - [Dan Abramov](https://overreacted.io/react-as-a-ui-runtime/). You can use TypeScript in your React Application but you will not get the same amount of advanatages out of it as you would if used in a NodeJS backend application.
 
 Still, TypeScript is a powerful language and is used in other frontend frameworks like Angular. The decision if you want to use TypeScript with React should be based on the properties of the development environment. See the following decision tree as a basis for your decision making:
 
