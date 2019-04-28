@@ -90,7 +90,7 @@ TypeScript brings following advantags to the table:
 TypeScript Feature  | Explanation | Use Cases in React World?
 ------------- | ------------- | -------------
 Safe typing   | Verify static typing on compile time | Improves the code quality of the React App
-Inheritance & inheritance behavior on runtime  | Class inheritance & usage of interfaces | React has its own system based on nesting components (render tree) which allows very limited usage of inheritance in React world, e.g. only usage might be Utility functionalies or Services.
+Inheritance & inheritance behavior on runtime  | Class inheritance & usage of interfaces | React has its own system based on nesting components (render tree) which allows very limited usage of inheritance in React world, e.g. only usage might be Utility functionalities or Services.
 [mixins](https://basarat.gitbooks.io/typescript/docs/types/mixins.html) | Allow the extension of classes and functions further to inheritance | React/Redux uses the Redux middleware functionality to implement side effects like this
 [dependency injection](https://nehalist.io/dependency-injection-in-typescript/) (e.g. via [inversify](http://inversify.io/)) | Inversion of control (IoC) has a lot of powerful use cases when it comes to backend programming e.g. switch database based on env, switch services and mockup services for testing, etc., | Again, React works in a different way and rather works around the render tree and the usage of Redux flags and props to switch out components.
 
