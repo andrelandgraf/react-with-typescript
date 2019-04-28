@@ -101,7 +101,6 @@ See [TypeScript JSX documentation](https://www.typescriptlang.org/docs/handbook/
 ## Decision Tree
 
 ![Decision Tree](./decision-tree.svg)
-<img src="./decision-tree.svg">
 
 # Create-React-App Readme
 
