@@ -53,18 +53,32 @@ export default class MyComponent extends React.Component<IMyComponentProps, IMyC
 }
 ```
 
-#### Pros of safe typing in React World
+#### Pros of using TypeScript in React World
 
 - find typing errors in compile time
 - better hints and documentation within the IDE
-- reduces likelihood of some kind of errors like `==` vs `===` or retrieving data from JSON files. 
+- reduces likelihood of some kind of errors like `==` vs. `===` or retrieving data from JSON files. 
+- no need for PropTypes anymore
 
-#### Cons of safe typing in React World
+#### Cons of using TypeScript in React World
 
-- less verbose, less boilerplate code (e.g. a new interface file for every component!)
 - slower development due to learning curve and refactoring
 - "TypeScript - JavaScript that scales." - worth it only if the app becomes bigger
 - introduces new problems, e.g. new naming conventions needed (interfaces start with big I...)
+
+#### Pros of staying with JavaScript in React World
+
+- less verbose, less boilerplate code (e.g. a new interface file for every component!)
+- PropTypes is not as powerful as static typing but already a good way to reduce the likelihood of typing errors
+
+### Interoperability of TypeScript and JavaScript
+
+- you can use JavaScript code within your TypeScript applicaiton
+- you can use JavaScript based npm modules within your app
+- you can use JavaScript based components within your TypeScript application
+
+Only limitation:
+- if you want to use a TypeScript component within a JavaScript React-App, you need to use PropTypes within your TypeScript application in order for the JavaScript based React-App to check for typing errors. 
 
 
 ## Available Scripts
