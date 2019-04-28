@@ -2,7 +2,7 @@
 
 A skeleton application using typescript and create-react-app. 
 
-## How to add Typescript to an existing create-react-app application
+## How to add TypeScript to an existing create-react-app application
 
 1. Bootstrapp app with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -97,6 +97,12 @@ Inheritance & inheritance behavior on runtime  | Class inheritance & usage of in
 ### JSX with TypeScript 
 
 See [TypeScript JSX documentation](https://www.typescriptlang.org/docs/handbook/jsx.html)
+
+## Conclusion
+
+TypeScript is a powerful tool that enables type safety in JavaScript world. Moreover, it enables a lot of principles of OO programming that are not part of the JavaScript language design. I have mentioned the most important features of TypeScript above. React however is based on it's own design principles and "it helps you write a program that predictably manipulates a complex host tree in response to external events like interactions, network responses, timers, and so on." - [Dan Abramov](https://overreacted.io/react-as-a-ui-runtime/). You can use TypeScript in your React Application but you will not get the same amount of advanatages out of it as you would if used in a NodeJS backend application. React has it's own design priciples and therefore not a lot of use cases for inheritance, mixins, and dependency injection.
+
+Still, TypeScript is a powerful language and is used in other frontend frameworks like Angular. The decision if you want to use TypeScript with React should be based on the properties of the development environment. See the following decision tree as a basis for your decision making:
 
 ## Decision Tree
 
