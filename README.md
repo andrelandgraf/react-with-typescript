@@ -18,7 +18,7 @@ A skeleton application using typescript and create-react-app.
 
 `npm run start` - The app is now running on TypeScript!
 
-## Pros of using TypeScript with React
+## Pros & Cons of using TypeScript with React
 
 ### Typing with TypeScript
 
@@ -80,6 +80,21 @@ export default class MyComponent extends React.Component<IMyComponentProps, IMyC
 Only limitation:
 - if you want to use a TypeScript component within a JavaScript React-App, you need to use PropTypes within your TypeScript application in order for the JavaScript based React-App to check for typing errors. 
 
+### TypeScript in front & backend
+
+- using TypeScript over the full stack of the application improves consistency of the code base
+- using TypeScript soley in a React frontend however, reduces the use cases for TypeScript, leaving a lot of overhead (e.g. TypeScript configuration overhead ). 
+
+TypeScript brings following advantags to the table: 
+
+- safe typing ( improves the code quality of the React App )
+- inheritance & dynamic inheritance
+
+### JSX with TypeScript 
+
+See [TypeScript JSX documentation](https://www.typescriptlang.org/docs/handbook/jsx.html)
+
+# Create-React-App Readme
 
 ## Available Scripts
 
